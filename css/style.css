@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --header-font: "Playfair Display", "serif";
+    --paragraph-font: "Roboto", "Arial", "sans-serif";
+    --header-font-color: #fff;
+    --paragraph-font-color: #333;
+    --section-padding-left-right: 15px;
+}
+
+main {
+    position: relative;
+}
+
+main .about .photo-container {
+    position: relative;
+    height: 350px;
+    padding: 25px;
+}
+
+main .about .photo-container::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(8 145 178);
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 75%);
+  z-index: -1;
+}
+
+main .about .photo-container .photo {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/personal-photo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+main .about .text {
+    padding-right: var(--section-padding-left-right);
+    padding-left: var(--section-padding-left-right);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+main .about .text h1 {
+    font-family: var(--header-font);
+    font-size: 40px;
+    color: darkorange;
+}
+
+main .about .text h2 {
+    font-family: var(--header-font);
+}
+
+main .about .text p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-font-color);
+}
+
+main .about .text .icons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 20px;
+}
+
+main .about .text .icons a {
+    text-decoration: none;
+    color: black;
+}
+
+
