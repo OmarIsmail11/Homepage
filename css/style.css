@@ -29,7 +29,7 @@ main .about .photo-container::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgb(8 145 178);
+  background: #D94B2B;
   clip-path: polygon(0 0, 100% 0, 100% 50%, 0 75%);
   z-index: -1;
 }
@@ -60,7 +60,7 @@ main .about .text {
 main .about .text h1 {
     font-family: var(--header-font);
     font-size: 40px;
-    color: darkorange;
+    color: #E46948;
 }
 
 main .about .text h2 {
