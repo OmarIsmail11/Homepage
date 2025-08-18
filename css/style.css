@@ -263,3 +263,139 @@ footer .photo img {
         text-align: left;
     }
 }
+
+/* Large (laptop) */
+@media (min-width: 1024px) { 
+    main > .about {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        padding-right: 50px;
+        padding-left: 50px;
+        margin-bottom: 50px;
+    }
+
+    main .about .photo {
+        flex: 1;
+        margin: 40px 0 40px;
+        height: 600px;
+    }
+
+    main .about .text {
+        flex: 2;
+        background-color: white;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        display: flex;
+        justify-content: flex-start;
+        padding: 20px;
+        align-items: flex-start;
+        text-align: left;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    main .about .text h1 {
+        font-size: 60px;
+    }
+
+    main .about .text h2 {
+        font-size: 50px;
+    }
+
+    main .about .text p {
+        font-size: 20px;
+    }
+
+    main .about .text .icons a {
+        font-size: 40px;
+    }
+
+    main .about .text .icons {
+        align-self: flex-end;
+    }
+
+    main::before {
+        clip-path: polygon(0 0, 100% 0, 100% 40%, 0 90%);
+    }
+
+    main .work .projects {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+
+    main .work {
+        margin-bottom: 100px;
+    }
+
+    main .work .projects .project p {
+        font-size: 20px;
+    }
+
+    main .work .projects .project .description h2 {
+        font-size: 30px;
+    }
+
+    main .work .projects .project .description .actions a {
+        font-size: 25px;
+    }
+
+    main .work .projects .project .description {
+        height: 260px;
+    }
+
+    main .work h2 {
+        font-size: 50px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        gap: 50px;
+    }
+
+    footer .contact-me {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    footer .photo {
+        width: 500px;
+        height: 500px;
+    }
+
+    footer .photo img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    footer .contact-me h2 {
+        text-align: left;
+        font-size: 60px;
+    }
+
+    footer .contact-me p {
+        text-align: left;
+        font-size: 25px;
+    }
+
+    footer .contact-me .icons a {
+        font-size: 50px;
+    }
+ }
+
+ /* Very large (desktops, wide screens) */
+@media (min-width: 1440px) {
+    main .work .projects {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
