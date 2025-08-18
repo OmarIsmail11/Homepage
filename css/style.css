@@ -193,7 +193,14 @@ footer .contact-me .icons a {
     font-size: 30px;
 }
 
+footer .contact-me .icons a[href^="tel:"] {
+    text-decoration: none;
+    font-size: 30px;
+}
+
+
 footer .photo img {
     display: block;
     width: 100%;
 }
+
