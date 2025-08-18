@@ -110,7 +110,7 @@ main .work .projects {
 main .work .project .description {
     padding: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    height: 200px;
+    height: 220px;
 }
 
 main .work > h2 {
@@ -192,7 +192,6 @@ footer .contact-me .icons a {
     color: black;
     font-size: 30px;
 }
-
 a[href^="tel:"] {
     text-decoration: none;
     font-size: 30px;
