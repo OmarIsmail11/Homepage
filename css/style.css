@@ -86,6 +86,7 @@ main .about .text a {
     color: black;
 }
 
+
 main .work .project .screenshot {
     height: 200px;
 }
@@ -202,3 +203,63 @@ footer .photo img {
     width: 100%;
 }
 
+/* Medium (tablet) */
+@media (min-width: 768px) and (max-width: 1023px) { 
+    main .about {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .about .photo {
+        flex: 1;
+        height: 500px;
+    }
+
+    main .about .text {
+        align-self: flex-end;
+        padding-bottom: 5%;
+        padding-top: 15%;
+        flex: 1;
+    }
+
+    main::before {
+        clip-path: polygon(0 0, 100% 0, 100% 25%, 0 45%);
+    }
+
+    main .work .projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    main .work {
+        margin-bottom: 100px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 30px;
+    }
+
+    footer .contact-me {
+        flex: 1;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    footer .photo {
+        flex: 1;
+    }
+
+    footer .contact-me h2 {
+        text-align: left;
+    }
+}
