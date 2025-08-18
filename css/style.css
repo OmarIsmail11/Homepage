@@ -204,7 +204,7 @@ footer .photo img {
 }
 
 /* Medium (tablet) */
-@media (min-width: 768px) and (max-width: 1023px) { 
+@media (min-width: 768px) and (max-width: 1025px) { 
     main .about {
         display: flex;
         flex-direction: row;
@@ -265,7 +265,7 @@ footer .photo img {
 }
 
 /* Large (laptop) */
-@media (min-width: 1024px) { 
+@media (min-width: 1026px) { 
     main > .about {
         display: flex;
         flex-direction: row;
