@@ -104,6 +104,7 @@ main .work .projects {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    margin-bottom: var(--section-margin);
 }
 
 main .work .project .description {
@@ -147,4 +148,52 @@ main .work .project .description .frame-1 h2 {
 main .work .project .description .frame-2 .about {
     font-family: var(--paragraph-font);
     color: var(--paragraph-font-color);
+}
+
+footer {
+    background-color: var(--theme-color);
+    color: white;
+    font-family: var(--paragraph-font);
+}
+
+footer .contact-me {
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .contact-me h2 {
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    font-family: var(--header-font);
+    margin-bottom: 10px;
+}
+
+footer .contact-me p:nth-of-type(2) {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+footer .contact-me .tel {
+    margin-bottom: 10px;
+}
+
+footer .contact-me .icons {
+    display: flex;
+    gap: 10px;
+}
+
+footer .contact-me .icons a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+footer .photo img {
+    display: block;
+    width: 100%;
 }
